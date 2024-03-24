@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <img src="download.png" class="img-fluid mx-5" alt="Gemini Logo" width="15%" height="10%">
+            <img src="Images/download.png" class="img-fluid mx-5" alt="Gemini Logo" width="15%" height="10%">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
         </div>
     </nav>
     <div>
-        <img src="image.png" class="img-fluid" alt="Main-image" width="1680px" height="960px">
+        <img src="Images/image.png" class="img-fluid" alt="Main-image" width="1680px" height="960px">
     </div>
     <div class="mt-5 mb-5 mx-5" width="750px" height="144px">
         <p class="display-4">Snap Photos and share like </p>
@@ -100,33 +100,31 @@
             </div>
         </div>
     </div>
-    <div class="mt-5 mb-5 mx-5" width="750px" height="144px">
-        <p class="display-4 text-center mb-4">Ready to take a free trial? </p>
-        <p class="display-6 text-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore</p>
-    </div>
-    <div class="mt-5 mb-5 mx-5" width="750px" height="144px">
+    <section class="container-fluid pb-2">
+        <div class="mt-5 mb-5 mx-5">
+            <p class="display-4 text-center mb-4">Ready to take a free trial? </p>
+            <p class="display-6 text-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore</p>
+        </div>
         <p class="display-4 text-center mb-4">Subscribe for free </p>
-        <form>
-            <div class="row g-3 align-items-center ">
-                <div class="col-auto w-25">
+        <div class="container-fluid px-5 my-5">
+            <form class="row g-3 border">
+                <div class="col-md-4 gx-5 my-4">
                     <label for="inputPassword6" class="col-form-label">First name</label>
                     <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                            aria-describedby="passwordHelpInline">
                 </div>
-                <div class="col-auto w-25" style="margin-left: 150px;">
+                <div class="col-md-4 gx-5 my-4" >
                     <label for="inputPassword6" class="col-form-label">Middle name</label>
                     <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                            aria-describedby="passwordHelpInline">
                 </div>
-                <div class="col-auto w-25" style="margin-left: 150px;">
+                <div class="col-md-4 gx-5 my-4">
                     <label for="inputPassword6" class="col-form-label">Last name</label>
                     <input type="password" id="inputPassword6" class="form-control"
                         aria-describedby="passwordHelpInline">
                 </div>
-            </div>
-            <div class="row g-3 align-items-center">
-                <div class="col-auto w-25" >
+                <div class="col-md-4 gx-5 my-4">
                     <label for="inputPassword6" class="col-form-label">Gender</label>
                     <select class="form-control">
                         <option>Select</option>
@@ -135,33 +133,245 @@
                         <option>Transgender</option>
                     </select>
                 </div>
-                <div class="col-auto w-25" style="margin-left: 150px;">
+                <div class="col-md-4 gx-5 my-4">
                     <label for="inputPassword6" class="col-form-label">Age</label>
                     <input type="password" id="inputPassword6" class="form-control w-500"
-                        aria-describedby="passwordHelpInline">
+                            aria-describedby="passwordHelpInline">
                 </div>
-                <div class="col-auto w-25" style="margin-left: 150px;">
+                <div class="col-md-4 gx-5 my-4">
                     <label for="inputPassword6" class="col-form-label">Contact Number</label>
                     <input type="password" id="inputPassword6" class="form-control"
-                        aria-describedby="passwordHelpInline">
+                            aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-12 gx-5 my-4">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <textarea class="form-control" id="inputAddress" aria-label="With textarea"></textarea>
+                </div>
+                <div class="text-center col-12 g-4 my-4">
+                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Navs and tabs section -->
+    <section class="container-fluid my-4">
+        <div class="row">
+            <div class="col-12 col-lg-6 ps-md-5 py-5 pe-md-2 text-center">
+                <img src="Images/read.png" alt="red image" height="350px" width="600px" class="img-fluid">
+            </div>
+            <div class="p-md-5 px-5 col-12 col-lg-6">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+                </div>
+                <div class="my-md-3">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                        retro synth master cleanse. Mustache cliche tempor, williams burg carles vegan helvetica.
+                        Reprehenderit butcher retro keffiyeh dreamc atcher synth. Cosby sweater eu banh mi, qui irure
+                        terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan
+                        american apparel, butcher voluptate nisi qui.</p>
                 </div>
             </div>
-            <label for="inputPassword6  row g-3 align-items-center" class="col-form-label">Address</label>
-            <div class="input-group ms-1 row g-3 align-items-center">
-                <!-- <span class="input-group-text">With textarea</span> -->
-                <textarea class="form-control" aria-label="With textarea"></textarea>
+    </section>
+
+    <!-- Accordion Section -->
+    <section class="container-fluid my-4 py-4">
+        <div class="row my-4">
+            <div class="accordion col-12 col-lg-6 px-5" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-center mt-4">
-                <button type="button" class="btn bg-white text-primary login mx-2 border border-primary">Submit</button>
+            <div class="col-12 col-lg-6">
+                <img src="Images/blueimg.png" alt="blue tree" width="600px" height="350px" class="img-fluid">
             </div>
-        </form>
-    </div>
-    <div class="inline">
-        <figure class="figure">
-            <img src="read.png" class="figure-img img-fluid rounded p-4" width="760px" height="441px" alt="red image">
-        </figure>
-          
-    </div>
+        </div>
+    </section>
+
+    <!-- Second last page -->
+    <section class="container-fluid text-center">
+        <div class="px-md-5 py-md-5">
+            <p class="display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <img class="m-3" src="Images/cross.png" alt="cross">
+            <p>Nemo enim ipsam</p>
+        </div>
+    </section>
+
+    <!-- Last page -->
+    <section class="container-fluid text-center py-5 px-5">
+        <p class="display-6 text-center">You’re in good company</p>
+        <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <div class="row gy-4">
+            <div class="col-12 col-lg-3 col-sm-6">
+                <div class="border">
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Cras justo odio</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">12</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Dapibus ac facilisis in</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">54</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Morbi leo risus</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">5</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Porta ac consectetur ac</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">123</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Vestibulum at eros</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">65</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6">
+                <div class="border">
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Cras justo odio</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">12</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Dapibus ac facilisis in</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">54</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Morbi leo risus</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">5</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Porta ac consectetur ac</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">123</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Vestibulum at eros</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">65</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6">
+                <div class="border">
+
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Cras justo odio</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">12</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Dapibus ac facilisis in</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">54</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Morbi leo risus</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">5</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Porta ac consectetur ac</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">123</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Vestibulum at eros</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">65</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6">
+                <div class="border">
+
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Cras justo odio</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">12</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Dapibus ac facilisis in</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">54</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Morbi leo risus</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">5</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Porta ac consectetur ac</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">123</p>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom mt-2 pt-2 px-2 align-items-center">
+                        <p>Vestibulum at eros</p>
+                        <p class="badge bg-purple px-3 text-center rounded-pill d-flex align-items-center">65</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
